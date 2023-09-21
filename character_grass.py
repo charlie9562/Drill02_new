@@ -25,24 +25,25 @@ def run_rectangle():
     print('RECTANGLE')
 
     #bottom line
-    #for x in range(50,750+1,5):
-        #render_frame(x,90) # x,y 위치에 캐릭터를 그려주는
+    for x in range(50,750+1,20):
+        render_frame(x,90) # x,y 위치에 캐릭터를 그려주는
     #Right line
-    #for y in range(90,550+1,5):
-        #render_frame(750,y)
+    for y in range(90,550+1,20):
+        render_frame(750,y)
         
     #top line
-    #for x in range(750,50-1,-5):
-        #render_frame(x,550)
+    for x in range(750,50-1,-20):
+        render_frame(x,550)
+        
     #left line    
-    for y in range(550,90-1,-5):
+    for y in range(550,90-1,-20):
         render_frame(50,y)
         
     
 while True:
-    #run_circle()
+    run_circle()
     run_rectangle()
-    break
+    
 
     
 
